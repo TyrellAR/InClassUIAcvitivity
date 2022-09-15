@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
                 id: Long
             ) {
 
+                for(item in numberArray) {
+                    parent.getItemAtPosition(position)
+
+                }
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
@@ -36,6 +40,8 @@ class MainActivity : AppCompatActivity() {
 
         // Step 3: Change TextView to saved text size
         changeButton.setOnClickListener {
+            displayTextView.setTextSize(spinner)
+            displayTextView parent.getChildAtPosition(0).setTextSize(spinner)
 
         }
 
